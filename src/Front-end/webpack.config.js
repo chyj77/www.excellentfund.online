@@ -4,8 +4,8 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = {
-    mode: 'development',
-    // mode: 'production',
+    // mode: 'development',
+    mode: 'production',
     //指定入口
     // entry: path.join(__dirname, "./main.js"),
     //使用babel-polyfill模拟ES6使用的环境，否则在IE使用vuex会出现“vuex requires a Promise polyfill in this browser”错误。
