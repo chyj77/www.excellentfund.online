@@ -462,8 +462,6 @@
     </div>
 </template>
 <script>
-    var echarts = require('echarts/dist/echarts');
-
     export default {
         data() {
             return {

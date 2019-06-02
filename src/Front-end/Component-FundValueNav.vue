@@ -72,12 +72,10 @@
     </div>
 </template>
 <script>
-    //引入lodash
-    var lodash = require("lodash");
     export default {
         created: function () {
             //延迟发送快速搜索栏的查询字符串，防止引发多次查询，使结果混淆
-            this.DelayAjax = lodash.debounce(this.FundValueNavSearchResultShow, 400);
+            this.DelayAjax = debounce(this.FundValueNavSearchResultShow, 400);
         },
         mounted() {
             $(function () {

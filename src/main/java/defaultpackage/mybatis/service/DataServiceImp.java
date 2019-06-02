@@ -1,8 +1,8 @@
 package defaultpackage.mybatis.service;
 
 import defaultpackage.mybatis.domain.*;
-import defaultpackage.mybatis.mapping.FundDataMapping;
-import defaultpackage.mybatis.mapping.StockDataMapping;
+import defaultpackage.mybatis.dao.FundDataMapping;
+import defaultpackage.mybatis.dao.StockDataMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

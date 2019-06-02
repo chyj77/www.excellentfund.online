@@ -42,7 +42,7 @@
 
             <div class="row">
                 <div class="col-xs-12" style="margin-top: 15px;margin-bottom: 15px">
-                    <span style="font-family: 微软雅黑;font-size: 25px;color: #337ab7">市场主要指数走势</span>
+                    <span style="font-family: 微软雅黑;font-size: 25px;color: #337ab7">市场主要指数近期走势</span>
                 </div>
             </div>
 
@@ -85,8 +85,6 @@
     </div>
 </template>
 <script>
-    //引入echarts
-    var echarts = require("echarts/dist/echarts");
     //图表实例
     var MainPageChart;
     //用SplitData方法处理后返回的全局对象dataStrObject,该对象包含两个数组属性：1、全部日期categoryData，2、全部净值values
@@ -240,14 +238,14 @@
                             dataZoom: [
                                 {
                                     type: 'inside',
-                                    start: 95,
+                                    start: 10,
                                     end: 100
                                 },
                                 {
-                                    show: true,
                                     type: 'slider',
+                                    show: true,
                                     y: '90%',
-                                    start: 95,
+                                    start: 10,
                                     end: 100
                                 }
                             ],

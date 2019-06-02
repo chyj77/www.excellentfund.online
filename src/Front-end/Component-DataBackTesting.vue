@@ -9,7 +9,9 @@
                     <div style="width:auto;height: 36px;text-align: center">
                         <div class="btn-group" role="group" aria-label="Default button group"
                              style="margin-left: auto;margin-right: auto">
-                            <button id="refreshCharBtn" type="button" class="btn btn-default" @click="DataBackTestingChartShow()">更新图表</button>
+                            <button id="refreshCharBtn" type="button" class="btn btn-default"
+                                    @click="DataBackTestingChartShow()">更新图表
+                            </button>
                             <!--<button type="button" class="btn btn-default">清空图表</button>-->
                         </div>
                     </div>
@@ -149,18 +151,13 @@
     </div>
 </template>
 <script>
-    //引入echarts
-    var echarts = require("echarts/dist/echarts");
     //图表实例
     var dataBackTestingChart;
-    //引入lodash
-    var lodash = require("lodash");
-
 
     export default {
         created: function () {
             //延迟发送快速搜索栏的查询字符串，防止引发多次查询，使结果混淆
-            this.DelayAjax = lodash.debounce(this.DataBackTestingSearchResultShow, 400);
+            this.DelayAjax = debounce(this.DataBackTestingSearchResultShow, 400);
         },
         mounted() {
             //初始化图表实例
@@ -218,8 +215,7 @@
                 //查询字符串如果为空，则隐藏搜索结果列表；输入内容时显示
                 if (newValue !== "") {
                     this.searchResultListShow = true;
-                }
-                else {
+                } else {
                     this.searchResultListShow = false;
                 }
             }
@@ -236,6 +232,7 @@
                             binding.value(e);
                         }
                     }
+
                     el.vueClickOutSide = DocumentHandle;
                     document.addEventListener("click", DocumentHandle);
                 },
@@ -490,8 +487,8 @@
             handleClose() {
                 this.searchResultListShow = false;
             },
-            GetFocusSearchResultListShow(){
-                if(this.searchStr!==""){
+            GetFocusSearchResultListShow() {
+                if (this.searchStr !== "") {
                     this.searchResultListShow = true;
                 }
             }
