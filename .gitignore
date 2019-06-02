@@ -36,4 +36,4 @@ package-lock.json
 node_modules/
 target/
 application.yml
-main.js
+bundle.js

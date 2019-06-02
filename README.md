@@ -22,7 +22,7 @@ ExcellentFund（优基网）是个人版的金融数据、信息门户网站，�
 ![运行环境](src/main/resources/dist/Pic/support.png)
 
 ## 开发环境
-- Amazon Corretto 11.0.3
+- OpenJDK（Amazon Corretto 11.0.3）
 - SpringBoot 2.1.3.RELEASE
 - MySQL 8.0.15
 - MyBatis 3.5.1

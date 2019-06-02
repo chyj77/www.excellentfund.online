@@ -11,12 +11,12 @@ module.exports = {
     //使用babel-polyfill模拟ES6使用的环境，否则在IE使用vuex会出现“vuex requires a Promise polyfill in this browser”错误。
     //目前IE可支持最低版本为IE10
     // entry: {
-    //     app: ["babel-polyfill", path.join(__dirname, "./main.js")]
+    //     app: ["babel-polyfill", path.join(__dirname, "./bundle.js")]
     // },
     //输出配置
     output: {
         path: path.join(__dirname, "../main/resources/dist/"), //指定输出目录
-        filename: "main.js" //输出文件名称
+        filename: "bundle.js" //输出文件名称
     },
     module: {
         //模块匹配规则
