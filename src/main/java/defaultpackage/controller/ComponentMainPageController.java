@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletResponse;
+import java.time.LocalDate;
 import java.util.List;
 
 @Controller
@@ -29,8 +30,10 @@ public class ComponentMainPageController {
      */
     @RequestMapping(value = "MainIndexChartShow.do", method = RequestMethod.POST)
     public void MainIndexChartShow(@RequestBody String jsonstr, HttpServletResponse response) {
+        LocalDate currentDate = LocalDate.now();
+        LocalDate lastDate = currentDate.minusMonths(6);
         //查找股票指数数据
-        List<EntityStockData> stockValueList = dateService.GetStockData(jsonstr);
+        List<EntityStockData> stockValueList = dateService.GetStockDataLimit(jsonstr, lastDate.toString(), currentDate.toString());
         //将结果转为json字符串返回
         String jsonlist = JSON.toJSONString(stockValueList);
         //返回查询数据

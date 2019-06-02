@@ -3,12 +3,12 @@
         <div class="col-xs-12" style="margin-top: 20px;margin-bottom: 20px;border: #cce0ff solid 1px">
             <ul style="font-family:'微软雅黑';font-size: 16px;color: #474747;line-height: 32px;list-style: none">
                 <li class="first-title">优基理念</li>
-                <li>万物皆可量化。将其应用于基金业绩评价时，体现在任何结论都立足于数据，以客观数据作为评价的首要标准。</li>
-                <li class="first-title">LOGO寓意</li>
-                <li>盾牌外形，体现以资产安全为本的投资理念：在保证资产安全的前提下，遵循市场规律，理解市场风险，再进一步实现稳健增值。</li>
-                <li>盾牌内部为凤凰，体现在资产安全理念的指导、规划下，立足于数据分析来理性挖掘市场中优秀基金标的，好“基”经过时间的洗礼和市场的历练，业绩抬头向上，稳步腾飞，最终蜕变成凤。</li>
+                <li>万物皆可量化。任何结论也都立足于真实、客观的数据。</li>
+                <li class="first-title">LOGO 寓意</li>
+                <li>盾牌外形：安全、防御；</li>
+                <li>凤凰：在安全、防御的框架下，立足于真实、客观的数据来理性判断市场中优秀基金标的，好“基”经过时间的洗礼和市场的历练，业绩抬头向上，稳步腾飞，最终蜕变成凤。</li>
                 <li class="first-title">主要板块</li>
-                <li><span class="small-title">首页：</span>展示最能够代表市场环境的指数K线图表，透过市场主要指数走势，可以了解当前市场风格、偏好和趋势。同时，该板块下的市场主要指数也可以作为基金风格的参照依据。</li>
+                <li><span class="small-title">首页：</span>展示最能够代表市场环境的指数 K 线图表，透过市场主要指数走势，可以了解当前市场风格、偏好和趋势。同时，该板块下的市场主要指数也可以作为基金风格的参照依据。</li>
                 <li><span class="small-title">净值数据：</span>展示市场上几大类基金产品（股票基金、债券基金、混合基金、保本基金、QDII基金）的基本净值信息，每种分类下的基金还可能具有指数跟踪、场内交易（LOF）两种属性。在该板块下，可进一步查看单只基金的详细信息，包括净值区间增长率、业绩数据等。
                 </li>
                 <li><span class="small-title">名词解释：</span>包含以下几部分内容。</li>
@@ -19,9 +19,6 @@
                 <li>注：基金的过往业绩并不代表其未来表现，仅供参考。</li>
                 <li><span class="small-title">*基金要闻：</span>摘录主流媒体有关基金市场环境、政策等报道。</li>
                 <li><span class="small-title">*投资札记：</span>记录投资策略及组合构建方法的板块。</li>
-                <li class="first-title">后记</li>
-                <li><span class="small-title">运行环境</span></li>
-                <li><img style="width: 670px;height: 77px;display: inline-block;background-image:url('./Pic/support.png')"/></li>
             </ul>
         </div>
     </div>

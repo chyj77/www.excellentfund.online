@@ -11,7 +11,7 @@ import aboutMsg from "./Component-AboutMsg.vue";
 import singleFundMsg from "./Component-SingleFundMsg.vue";
 import footMsg from "./Component-FootMsg.vue";
 //mint-ui
-import {InfiniteScroll} from "mint-ui";
+import InfiniteScroll from "mint-ui";
 
 Vue.use(InfiniteScroll);
 //bootstrap 3.3.7，jquery 3.0.0
@@ -22,24 +22,16 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
+
 //datepicker
 import DatePicker from 'vue2-datepicker';
 
 Vue.use(DatePicker);
+
 //vuex
-import Vuex from 'vuex'
+import Vuex from 'vuex';
 
 Vue.use(Vuex);
-
-//ElementUI
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-
-Vue.use(ElementUI);
-
-//引入axios
-import axios from 'axios';
-Vue.prototype.$http = axios;
 
 const store = new Vuex.Store({
     state: {
